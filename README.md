@@ -31,13 +31,15 @@ Some koans simply need to have the correct answer substituted for an incorrect o
 
 #### Running Locally
 
-1. Install [.NET Core SDK 3.1](https://www.microsoft.com/net/core).
-2. Install [Visual Studio Code](https://code.visualstudio.com/), the [Insiders Edition](https://code.visualstudio.com/insiders) is highly recommended.
-3. Clone the repository: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
-4. Change directory into the cloned repository `cd DotNetCoreKoans`.
-5. Restore packages: `dotnet restore`.
-6. Open the project in VSCode `code-insiders .` or `code .` depending on what version you chose to install.
-7. Run the koans in watch mode: `dotnet watch --quiet run`.
+1. Install [.NET 6](https://www.microsoft.com/net/core).
+2. Install Visual Studio 2022.
+3. Clone the repository from Visual Studio or using the git bash: `git clone https://github.com/NotMyself/DotNetCoreKoans.git`.
+4. Double click on the DotNetCoreKoans.sln file in the file explorer to open the solution.
+5. Attempt to build the project to ensure the packages are restored.
+6. In Visual Studio, click View then click Terminal.
+7. Right click on the DotNetCoreKoans solution in the Solution Explorer panel and select "Copy Full Path".
+8. In the terminal, type: `cd ` paste in path that you copied without the \DotNetCoreKoans.sln at the end. Press Enter.
+7. Now that you're in the right folder, type the following in the terminal to begin: `dotnet watch --quiet run`.
    - **Note:** The `--quiet` flag is used here to suppress mesages from the watch framework.
 8. Follow along with the instructions printed to your console. Each time you save a \*.cs file, the project will be built and run again for you automatically.
 
